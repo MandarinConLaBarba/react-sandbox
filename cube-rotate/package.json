@@ -1,11 +1,11 @@
 {
-  "name": "mandarindrummond.com.resume",
+  "name": "cube-rotate",
   "private": true,
   "version": "1.0.0",
   "description": "Mandarin's resume",
   "main": "server.js",
   "author": "Mandarin Drummond",
-  "dependencies": {  
+  "dependencies": {
   },
   "devDependencies": {
     "babel-core": "^6.6.5",
