@@ -52,9 +52,17 @@ const Cube = (props) => {
   let topStyle = {transform: `rotateX(-90deg) translateZ(${sideZ}em)`}
   let bottomStyle = {transform: `rotateY(-180deg) translateZ(${sideZ}em)`}
 
+  frontStyle['-webkit-transform'] = frontStyle.transform;
+  backStyle['-webkit-transform'] = backStyle.transform;
+  rightStyle['-webkit-transform'] = rightStyle.transform;
+  leftStyle['-webkit-transform'] = leftStyle.transform;
+  topStyle['-webkit-transform'] = topStyle.transform;
+  bottomStyle['-webkit-transform'] = bottomStyle.transform;
+
   let cubeStyle = {
     transform: `rotateX(${cubeXRotate}deg) rotateY(${cubeYRotate}deg)`
   }
+  cubeStyle['-webkit-transform'] = cubeStyle.transform;
 
   return (
     <div className="cube" style={cubeStyle}>
